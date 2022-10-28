@@ -1,0 +1,9 @@
+.done{
+    text-decoration: line-through;
+}
+#empty-task{
+    display: block;
+}
+#empty-task-done{
+    display: block;
+}

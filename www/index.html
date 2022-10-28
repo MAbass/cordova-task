@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Hello World</title>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h2>Gestion des tâches</h2>
+      </div>
+
+      <div class="ui-content" data-role="main">
+        <form action="">
+          <input type="text" id="task" placeholder="Ajouter une tache" />
+          <button type="button" onclick="addTask()">Ajouter</button>
+          <button type="button" onclick="reinitialize()">Réinitialiser</button>
+        </form>
+        <h2>Tâches à faire</h2>
+        <ul data-role="listview" id="list-task" data-inset="true">
+          <li id="empty-task">Pas de tâches pour l'instant</li>
+        </ul>
+        <h2>Tâches déjà faites</h2>
+        <ul data-role="listview" id="list-task-done" data-inset="true">
+          <li id="empty-task-done">Pas de tâches exécutées</li>
+        </ul>
+      </div>
+    </div>
+    <script src="cordova.js"></script>
+  </body>
+</html>
